@@ -14,12 +14,11 @@ A music app build with flutter, inpired by [this great design](https://dribbble.
 
 ## Screenshots
 
-![songs](screenshots/sc_home_songs.png)
-![albums](screenshots/sc_home_albums.png)
-![queue player 1](screenshots/sc_queue_player1.png)
-![queue player 1](screenshots/sc_queue_player2.png)
-![albums details](screenshots/sc_album_details.png)
-
+<img src="screenshots/sc_home_songs.png" width="50%" height="50%">
+<img src="screenshots/sc_home_albums.png" width="50%" height="50%">
+<img src="screenshots/sc_queue_player1.png" width="50%" height="50%">
+<img src="screenshots/sc_queue_player2.png" width="50%" height="50%">
+<img src="screenshots/sc_album_details.png" width="50%" height="50%">
 
 ## Dependencies
 

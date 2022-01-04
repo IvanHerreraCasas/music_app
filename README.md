@@ -1,16 +1,30 @@
+
 # music_app
 
-A new Flutter project.
+A music app build with flutter, inpired by [this great design](https://dribbble.com/shots/9173692-Music-App)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Play, pause, seek local songs
+- Run in background
+- Shuffle and repeate mode
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Screenshots
+
+![songs](screenshots\sc_home_songs.png)
+![albums](screenshots\sc_home_albums.png)
+![queue player 1](screenshots\sc_queue_player1.png)
+![queue player 1](screenshots\sc_queue_player2.png)
+![albums details](screenshots\sc_album_details.png)
+
+
+## Dependencies
+
+- [riverpod](https://pub.dev/packages/flutter_riverpod)
+- [on_audio_query](https://pub.dev/packages/on_audio_query)
+- [just_audio](https://pub.dev/packages/just_audio)
+- [audio service](https://pub.dev/packages/audio_service)
+

@@ -24,7 +24,6 @@ class SongsPage extends ConsumerWidget {
           child: SongWidget(song: songs[index]),
         );
       },
-      //separatorBuilder: (_, __) => const SizedBox(height: 10),
     );
   }
 }

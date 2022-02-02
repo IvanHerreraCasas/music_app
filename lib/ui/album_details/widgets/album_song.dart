@@ -10,18 +10,18 @@ class AlbumSong extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return SizedBox(
-      height: 60,
-      child: Row(
+    return Row(
         children: [
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
                   song.title,
                   style: Theme.of(context).textTheme.headline3,
                 ),
+                const SizedBox(height: 10),
                 Text(
                   song.artist ?? '',
                   style: Theme.of(context).textTheme.headline4,
@@ -34,7 +34,6 @@ class AlbumSong extends StatelessWidget {
             style: Theme.of(context).textTheme.headline4,
           )
         ],
-      ),
-    );
+      );
   }
 }

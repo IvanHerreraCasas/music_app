@@ -22,9 +22,6 @@ class AlbumsScreen extends ConsumerWidget{
       itemBuilder: (context, index) {
         return GestureDetector(
           onTap: () {
-            /*final album = albums[index];
-            final queue = ref.read(songsProvider).where((song) => song.album == album.title).toList();
-            ref.watch(audioPlayerProvider.notifier).startPlayList(queue, 0);*/
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => AlbumDetails(album: albums[index])),

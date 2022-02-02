@@ -8,20 +8,27 @@ class SongInfo extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final song = ref.watch(audioPlayerProvider.select((value) => value.currentSong));
 
-    
-
-    return Column(
-      children: [
-        Text(
-          song?.title ?? '',
-          style: Theme.of(context).textTheme.headline1,
-        ),
-        const SizedBox(height: 20),
-        Text(
-          song?.album ?? '',
-          style: Theme.of(context).textTheme.headline4,
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 30),
+      child: Column(
+        children: [
+          Text(
+            '${song?.title ?? ''}\n',
+            textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.headline1,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+          ),
+          const SizedBox(height: 20),
+          Text(
+            song?.album ?? '',
+            textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.headline4,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+          ),
+        ],
+      ),
     );
   }
 }

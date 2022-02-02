@@ -16,9 +16,8 @@ class QueueSong extends ConsumerWidget {
 
     return IgnorePointer(
       ignoring: isPlaying,
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 5),
-        height: 60,
+      child: Padding(
+        padding: const EdgeInsets.all(5.0),
         child: Row(
           children: [
             isPlaying
@@ -28,6 +27,7 @@ class QueueSong extends ConsumerWidget {
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
                     song.title,
